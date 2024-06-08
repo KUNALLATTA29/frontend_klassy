@@ -1,0 +1,823 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>web page</title>
+  <script src="https://kit.fontawesome.com/cdc109e0d0.js" crossorigin="anonymous"></script>
+  <style>
+    *{
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+    }
+/*styling for header*/
+
+    .header{
+      width: 100%;
+      height: 100px;
+      display: flex;
+      justify-content: space-between;
+    }
+    .opt{
+      display: flex;
+      margin-right: 10%;
+      width: 40%;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 18px;
+    }
+    .opt p:hover{
+      color: #fb5849;
+    }
+
+    .header img{
+      width: 170px;
+      height: 55px;
+      margin: 1.5% 10%;
+    }
+
+    .opt p:nth-child(1){
+      color: orangered;
+    }
+
+/*styling for main*/
+
+  .main{
+    width: 100%;
+    height: 600px;
+    display: flex;
+  }
+  .m1{
+    width: 30%;
+    height: 100%;
+    background-image: url(main1.png);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+  .m1 button:hover{
+    cursor: pointer;
+  }
+  .m2{
+    width: 70%;
+    height: 100%;
+  }
+  .m2 img{
+    width: 100%;
+    height: 100%;
+    
+  }
+
+  .m1 h4{
+    font-size:50px ;
+    font-weight: 700;
+    color: white;
+  }
+  .m1 h6{
+    font-size: 16px;
+    color: white;
+  }
+  .m1 button{
+    font-size: 13px;
+    padding: 13px;
+    color: #fb5849;
+    border-radius: 2px;
+    border: none;
+    padding: 13px 50px;
+  }
+  /*styling for about*/
+
+  .about{
+    width: 100%;
+    height: 700px;
+    display: flex;
+  }
+
+  .a1{
+    width: 50%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .a1 h6::before{
+    content: ' ';             
+    display: inline-block;   
+    width: 20px;             
+    height: 2px;             
+    background-color:#fb5849;  
+    margin-right: 10px;     
+    vertical-align: middle;
+  }
+
+  .a1 h6{
+    color: #fb5849;
+    font-size: 18px;
+    font-weight: 100;
+    margin-right: 59%;
+  }
+  .a1 h2{
+    font-size: 30px;
+    width: 40%;
+    font-style:1000;
+    margin-top: 12px;
+    margin-right: 35%;
+  }
+  .a1 p{
+    font-size: 18px;
+    margin: 12px 0px;
+    width: 75%;
+  }
+  .a1i{
+    display: flex;
+    justify-content: space-between;
+    width: 75%;
+  }
+
+  .a2{
+    width: 50%;
+    height: 90%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+  }
+
+  .a2 img{
+    height: 75%;
+    width: 70%;
+  }
+  /*styling for menu*/
+
+  .menu{
+    width: 100%;
+    height: 800px;
+  }
+
+  .me1{
+    height: 40%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(255, 212, 219);
+  }
+  
+  .me1 h6::before{
+    content: ' ';             
+    display: inline-block;   
+    width: 20px;             
+    height: 2px;             
+    background-color:#fb5849;  
+    margin-right: 10px;     
+    vertical-align: middle;
+  }
+  .me1 h6{
+    color: #fb5849;
+    font-size: 18px;
+    font-weight: 100;
+    margin-right: 59%;
+  }
+  .me1 h2{
+    font-size: 30px;
+    width: 20%;
+    font-style:1000;
+    margin-top: 12px;
+    margin-right: 48%;
+  }
+
+  .me2{
+    width: 100%;
+    height: 60%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(255, 212, 219);
+  }
+ 
+  .c{
+    width: 18%;
+    height: 85%;
+    position: relative;
+  }
+  .doom{
+    height: 15%;
+    color: white;
+    background-color: #fb5849;
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    text-align: center;
+    padding-top: 30px;
+    font-size: 30px;
+  }
+  .c img{
+    height: 85%;
+    width: 100%;
+  }
+  .rate{
+    position: absolute;
+    background-color: #fb5849;
+    width: 20%;
+    height: 15%;
+    border-radius: 2px;
+    text-align: center;
+    padding-top: 20px;
+    font-size: 20px;
+    color: white;
+  }
+
+  /*styling for chefs*/
+
+  .chefs{
+    width: 100%;
+    height: 800px;
+  }
+
+  .ch1{
+    width: 100%;
+    height: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .ch11{
+    width: 100%;
+    height: 40%;
+    background-color: rgb(255, 212, 219);
+  }
+  
+  .ch1 h6{
+    color: #fb5849;
+    font-size: 15px;
+    font-weight: 100;
+    padding-top: 30px;
+  }
+  .ch1 h2{
+    font-size: 30px;
+    width: 20%;
+    font-style:1000;
+    margin-top: 12px;
+    margin-left: 90px;
+    font-weight:900;
+  }
+  
+  .ch2{
+    height: 60%;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+  }
+  .chcard{
+    height:90%;
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    justify-content: center;
+    border: 1px solid silver;
+  }
+  .chcard img{
+    height: 80%;
+    width: 95%;
+  }
+
+  .chcard  h4{
+    font-size: 25px;
+  }
+  .chcard h6{
+    font-size: 15px;
+    font-weight: 100;
+  }
+
+/*styling for contact*/
+
+.contact{
+  height: 700px;
+  width: 100%;
+  background-image: url(co.png);
+  margin-top: 80px;
+  display: flex;
+  padding-top: 5%;
+}
+.co1{
+  height: 80%;
+  width: 50%;
+  background-color: ;
+  display: flex;
+  gap: 70px;
+  flex-direction: column;
+  align-items: center;
+}
+.co2{
+  height: 80%;
+  width: 50%;
+}
+.co1 h6::before{
+  content: ' ';             
+  display: inline-block;   
+  width: 20px;             
+  height: 2px;             
+  background-color:white;  
+  margin-right: 10px;     
+  vertical-align: middle;
+}
+.co1 h6{
+    color: white;
+    font-size: 18px;
+    font-weight: 100;
+    margin-right: 30%;
+}
+.co1 h2{
+  color: white;
+  width: 50%;
+}
+.co1 p{
+  font-size: 18px;
+  margin-left: 155px;
+  width: 70%;
+  color: white;
+}
+.co11{
+  display: flex;
+  justify-content: space-between;
+  width: 70%;
+  margin-left: 20%;
+}
+.pn{
+  background-color:antiquewhite;
+  height: 150px;
+  border-radius: 2px;
+  position: relative;
+  box-sizing: border-box;
+  width: 200px;
+  padding-top: 7%;
+}
+.pn h3{
+  padding-left: 20%;
+
+}
+.pn p{
+
+  color:black;
+  margin-top: 20px;
+  margin-left: 20%;
+  padding-left: 5%;
+}
+.pn i{
+  color: white;
+  border-radius: 50px;
+  background-color: #fb5849;
+  padding: 10%;
+  position: absolute;
+  left: 40%;
+  bottom: 85%;
+}
+.em{
+  background-color:antiquewhite;
+  height: 150px;
+  border-radius: 2px;
+  position: relative;
+  box-sizing: border-box;
+  width: 200px;
+  padding-top: 7%;
+}
+.em h3{
+  padding-left: 35%;
+}
+.em p{
+
+  color:black;
+  margin-top: 20px;
+  margin-left: 12%;
+}
+.em i{
+  color: white;
+  border-radius: 50px;
+  background-color: #fb5849;
+  padding: 10%;
+  position: absolute;
+  left: 35%;
+  bottom: 85%;
+}
+.conform{
+  display: flex;
+  flex-direction: column;
+  padding: 5%;
+  align-items: center;
+  background-color: white;
+  width: 80%;
+  border-radius: 10px;
+}
+.conform h2{
+  font-size: 40px;
+
+}
+.conbox{
+  display: flex;
+  justify-content: space-evenly;
+  width: 80%;
+  
+
+}
+.conbox input{
+  padding: 9%;
+  border-radius: 2px;
+  border: 1px solid gray;
+  margin: 10% 0;
+
+}
+.cf1{
+  margin-left: -25px;
+}
+textarea{
+  width: 75%;
+  height: 150px;
+  border-radius: 5px;
+  margin-top: 10px;
+  padding: 5%;
+  font-size: 20px;
+}
+.conform button{
+  margin-top: 10px;
+  padding: 2%;
+  width: 75%;
+  border-radius: 5px;
+  border: none;
+  color: white;
+  background-color: #fb5849;
+}
+
+/*style for week*/
+
+.week{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 100px;
+  gap: 40px;
+}
+.week h6{
+  color: #fb5849;
+  font-size: 20px;
+  font-weight: 100;
+}
+.week h3{
+  font-size: 40px;
+}
+.we1{
+  color: #fb5849;
+  display: flex;
+  justify-content: space-around;
+  width: 50%;
+  font-size: 50px;
+}
+.we2{
+  width: 70%;
+  display: flex;
+  justify-content: space-between;
+  height: 500px;
+}
+.we21{
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.we22{
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.wecard{
+  display: flex;
+  justify-content: space-between;
+}
+.wecard button{
+  background-color: #fb5849;
+  color: white;
+  padding: 5%;
+  height: 80px;
+  border: none;
+  border-radius: 5px;
+  margin-top: 2.5%;
+}
+.wet{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+.wet h3{
+  font-size: 30px;
+  margin-right: 70px;
+}
+.wecard img {
+  border-radius: 5px;
+}
+
+/*style for footer*/
+
+.footer{
+  background-color: #fb5849;
+  margin-top: 90px;
+  display: flex;
+  justify-content: space-around;
+  padding: 5% 0;
+}
+.footi{
+  display: flex;
+  justify-content: space-evenly;
+  width: 20%;
+  font-size: 25px;
+}
+.footi i{
+  border-radius: 50px;
+  background-color: white;
+  padding: 6%;
+  color: #fb5849;
+}
+.copy{
+  color: white;
+}
+.copy :nth-child(2){
+  margin-left: 50px;
+}
+.footi i:hover{
+  color:black;
+}
+</style>
+</head>
+<body>
+<div class="header">
+  <img src="logo.png" alt="">
+  <div class="opt">
+      <p>Home</p>
+      <p>About</p>
+      <p>Menu</p>
+      <p>Chef</p>
+      <p>Features</p>
+      <p>Contact Us</p>
+  </div>
+</div>
+<div class="main">
+  <div class="m1">
+    <h4>KlassyCafe</h4>
+    <h6>THE BEST EXPERIENCE</h6>
+    <button>Make A Reservation</button>
+  </div>
+  <div class="m2">
+    <img src="main21.png" alt="">
+  </div>
+</div>
+<div class="about">
+  <div class="a1">
+    <h6>ABOUT US</h6>
+    <h2>We Leave A Delicious Memory For You</h2>
+    <p>
+      Klassy Cafe is one of the best restaurant HTML templates with Bootstrap
+      v4.5.2 CSS framework. You can download and feel free to use this website
+      template layout for your restaurant business. You are allowed to use this
+      template for commercial purposes.
+    </p>
+    <p>
+      You are NOT allowed to redistribute the template ZIP file on any template
+      donwnload website. Please contact us for more information.
+    </p>
+    <div class="a1i">
+      <img src="abtx1.png" alt="">
+      <img src="abtx2.png" alt="">
+      <img src="abtx3.png" alt="">
+    </div>
+  </div>
+  <div class="a2">
+    <img src="abvi.png" alt="">
+  </div>
+</div>
+<div class="menu">
+  <div class="me1">
+    <h6>
+      OUR MENU
+    </h6>
+    <h2>
+      Our selection of cakes with quality taste
+    </h2>
+  </div>
+  <div class="me2">
+      <div class="c">
+        <p class="rate">$22</p>
+        <img src="me1.png" alt="">
+        <p class="doom">Cup Cake</p>
+
+      </div>
+      <div class="c">
+        <p class="rate">$35</p>
+        <img src="me2.png" alt="">
+        <p class="doom">Pizza</p>
+      </div>
+      <div class="c">
+        <p class="rate">$10</p>
+        <img src="me3.png" alt="">
+        <p class="doom">Ice Cream</p>
+      </div>
+      <div class="c">
+        <p class="rate">$15</p>
+        <img src="me4.png" alt="">
+        <p class="doom">Dosa</p>
+      </div>
+      <div class="c">
+        <p class="rate">$19</p>
+        <img src="me5.png" alt="">
+        <p class="doom">Pan Cake</p>
+      </div>
+  </div>
+</div>
+<div class="chefs">
+  <div class="ch1">
+    <div class="ch11"></div>
+    <h6>OUR CHEFS</h6>
+    <h2>We Offer the best ingredients for you</h2>
+  </div>
+  <div class="ch2">
+    <div class="chcard">
+      <img src="ch1.png" alt="">
+      <p>
+        <h4>Randy Walker</h4>
+        <h6>Pastry Chef</h6>
+      </p>
+    </div>
+    <div class="chcard">
+      <img src="ch2.png" alt="">
+      <p>
+        <h4>David Martin</h4>
+        <h6>Cookie Chef</h6>
+      </p>
+    </div>
+    <div class="chcard">
+      <img src="ch3.png" alt="">
+      <p>
+        <h4>Peter Perkson</h4>
+        <h6>Pancake Chef</h6>
+      </p>
+    </div>
+  </div>
+</div>
+<div class="contact">
+  <div class="co1">
+    <h6>CONTACT US</h6>
+    <h2>Here You Can Make A Reservation Or Just Walkin to our cafe</h2>
+    <p>
+      Donec pretium est orci, non vulputate arcu hendrerit a. Fusce a eleifend
+      riqsie, namei sollicitudin urna diam, sed commodo purus porta ut.
+    </p>
+    <div class="co11">
+      <div class="pn">
+        <h3>Phone Numbers</h3>
+        <p>080-090-0990</p>
+        <p>080-090-0990</p>
+        <i class="fa-solid fa-phone"></i>
+      </div>
+      <div class="em">
+        <h3>Emails</h3>
+        <p>hello@company.com</p>
+        <p>hello@company.com</p>
+        <i class="fa-solid fa-envelope"></i>
+      </div>
+    </div>
+  </div>
+  <div class="co2">
+    <div class="conform">
+      <h2>Table Reservation</h2>
+      <div class="conbox">
+        <div class="cf1">
+          <input type="text" placeholder="Your Name*"><br>
+          <input type="text" placeholder="Phone Number*"><br>
+          <input type="text" placeholder="dd/mm/yyyy"><br>
+        </div>
+        <div class="cf2">
+          <input type="text" placeholder="Your Email Address"><br>
+          <input type="text" placeholder="Number Of Guests"><br>
+          <input type="text" placeholder="Time"><br>
+        </div>
+      </div>
+      <textarea name="" placeholder="Message" id=""></textarea>
+      <button>Make A Reservation</button>
+      
+
+    </div>
+  </div>
+</div>
+<div class="week">
+  <h6>KLASSY WEEK</h6>
+  <h3>
+    This Week's Special<br>
+    Meal Offers
+  </h3>
+  <div class="we1">
+    <i class="fa-solid fa-bowl-food"></i>
+    <i class="fa-solid fa-mug-hot"></i>
+    <i class="fa-solid fa-utensils"></i>
+  </div>
+  <div class="we2">
+    <div class="we21">
+      <div class="wecard">
+        <img src="w1.png" alt="">
+        <div class="wet">
+          <h3>Eggs Omelette</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur<br>
+            koit adipiscing elit, sed do.
+          </p>
+        </div>
+        <button>$6.50</button>
+      </div>
+      <div class="wecard">
+        <img src="w1.png" alt="">
+        <div class="wet">
+          <h3>Eggs Omelette</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur<br>
+            koit adipiscing elit, sed do.
+          </p>
+        </div>
+        <button>$6.50</button>
+      </div>
+      <div class="wecard">
+        <img src="w1.png" alt="">
+        <div class="wet">
+          <h3>Eggs Omelette</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur<br>
+            koit adipiscing elit, sed do.
+          </p>
+        </div>
+        <button>$6.50</button>
+      </div>
+    </div>
+    <div class="we22">
+      <div class="wecard">
+        <img src="w1.png" alt="">
+        <div class="wet">
+          <h3>Eggs Omelette</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur<br>
+            koit adipiscing elit, sed do.
+          </p>
+        </div>
+        <button>$6.50</button>
+      </div>
+      <div class="wecard">
+        <img src="w1.png" alt="">
+        <div class="wet">
+          <h3>Eggs Omelette</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur<br>
+            koit adipiscing elit, sed do.
+          </p>
+        </div>
+        <button>$6.50</button>
+      </div>
+      <div class="wecard">
+        <img src="w1.png" alt="">
+        <div class="wet">
+          <h3>Eggs Omelette</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur<br>
+            koit adipiscing elit, sed do.
+          </p>
+        </div>
+        <button>$6.50</button>
+      </div>
+    </div>
+  </div>
+
+</div>
+<div class="footer">
+  <div class="footi">
+    <i class="fa-brands fa-facebook-f"></i>
+    <i class="fa-brands fa-twitter"></i>
+    <i class="fa-brands fa-linkedin-in"></i>
+    <i class="fa-brands fa-instagram"></i>
+  </div>
+  <div class="footlog">
+    <img src="footlog.png" alt="">
+  </div>
+  <div class="copy">
+    <p>
+      <i class="fa-regular fa-copyright"></i>Copyright Klassy cafe Co.
+    </p>
+    <p>
+      Design: TemplateMo
+    </p>
+  </div>
+</div>
+</body>
+</html>
